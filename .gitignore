@@ -1,0 +1,8 @@
+jc.db
+__pycache__
+dist
+build
+*.spec
+.idea
+release
+venv

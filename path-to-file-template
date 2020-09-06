@@ -1,0 +1,16 @@
+## This a sample template file
+# This should contain only infrastructure infomation
+# format: environment,hostname,ip_address,username,password
+
+# if you want to leave any file empty just leave it black comma seprated
+
+# eg - development,primary,10.254.208.86,ubuntu,
+# in the above the password is left empty but still the line ends with a empty comma
+
+# development,primary,10.254.208.86,,pa5sw0rd
+# in the above example leaving the user name empty
+
+#-- Remove the above line from here, Only the information in below format should remain --
+
+development,primary,10.254.208.86,ubuntu,pa5sw0rd
+development,pleasing-antlion,10.254.208.34,ubuntu,anotherPaswD
