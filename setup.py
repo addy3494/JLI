@@ -1,15 +1,16 @@
-import os, sys, re
-from setuptools import setup, find_packages
-from distutils.command.install import INSTALL_SCHEMES
+import os, re
 
+from distutils.command.install import INSTALL_SCHEMES
 for scheme in INSTALL_SCHEMES.values():
     scheme['data'] = scheme['purelib']
+
+from setuptools import setup
 
 version_re = re.compile("""__version__[\s]+=[\s]*['|"](.*)['|"]""")
 
 prjdir = os.path.dirname(__file__)
 
-with open('jc/__init__.py', 'r') as f:
+with open('jc/__init__.py', 'r', encoding="utf-8") as f:
     content = f.read()
     match =version_re.search(content)
     version = match.group(1)
@@ -24,7 +25,7 @@ setup(
     incude_package_data=True,
     version=version,
     description=('A Lazy SSH Command Line Helper'),
-    long_description=long_description,
+    long_description='',
     url='https://github.com/addy3494/jc',
     author='addy3494',
     author_email='adithya3494@gmail.com',
