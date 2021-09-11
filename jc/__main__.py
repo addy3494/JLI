@@ -25,5 +25,4 @@ if __name__ == "__main__":
     if minor < 6:
         print("jc requires Python 3.6+\nYou are using Python %s, which is not supported by jc" % (python_version))
         sys.exit(1)
-
-jc.main()
+    jc.main()

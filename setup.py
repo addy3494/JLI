@@ -20,7 +20,7 @@ def read(filename):
 long_description = read('README.md')
 
 setup(
-    name='justc',
+    name='justconnect',
     incude_package_data=True,
     version=version,
     description=('A Lazy SSH Command Line Helper'),
