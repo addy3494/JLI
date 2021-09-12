@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 
 """
-jc: A Lazy SSH CLI helper to oraganise your environemtns, hosts and users
+jc: A Lazy SSH CLI helper to organize your infrastructure, hosts and users
 """
 
 import sys

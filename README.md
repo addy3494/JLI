@@ -1,13 +1,12 @@
 <p align="center">
   <img width="250"
-       src="assets/logo.png">
+       src="https://github.com/addy3494/jc/raw/master/assets/logo.png">
 <h1 align="center">Jc - A Lazy SSH Command Line Helper</h1>
-</p>
 
 ![](https://img.shields.io/badge/license-MIT-green.svg?style=flat)
 
 <img
-  src="assets/demo.gif"
+  src="https://github.com/addy3494/jc/raw/master/assets/demo.gif"
   alt="Jc - A Lazy SSH Command Line Helper"
   width="100%"
   align="center"
