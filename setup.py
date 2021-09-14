@@ -4,7 +4,7 @@ from distutils.command.install import INSTALL_SCHEMES
 for scheme in INSTALL_SCHEMES.values():
     scheme['data'] = scheme['purelib']
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 version_re = re.compile("""__version__[\s]+=[\s]*['|"](.*)['|"]""")
 
@@ -41,9 +41,9 @@ setup(
         'Topic :: Terminals',
     ],
     py_modules = ['jc',],
-    package = ['jc',],
     install_requires = [
         'plumbum>=1.7.0',
         'pyfzf>=0.2.2',
     ],
+    packages = find_packages(),
 )
