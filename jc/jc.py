@@ -157,7 +157,7 @@ def output(cursor):
     data = cursor.fetchall()
     dec = input('{}\n *> /path/to/write ?: default will be current working directory:{} '.format(BOLD, ENDC))
     dec if dec else './'
-    with open(os.path.join(f'{dec}','jc.out'), 'w', encoding='utf-8') as f:
+    with open(os.path.join(f'{dec}','jc.out'), 'w', encoding="utf-8") as f:
         for conn in data:
             f.write(','.join(conn) + '\n')
 

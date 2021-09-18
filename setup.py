@@ -1,12 +1,13 @@
+# pylint: disable=missing-module-docstring
+
 import os
 import re
-
-from setuptools import setup, find_packages
 from distutils.command.install import INSTALL_SCHEMES
+from setuptools import setup, find_packages
 for scheme in INSTALL_SCHEMES.values():
     scheme['data'] = scheme['purelib']
 
-version_re = re.compile("""__version__[\s]+=[\s]*['|"](.*)['|"]""")
+version_re = re.compile("""__version__[\\s]+=[\\s]*['|"](.*)['|"]""")
 
 with open('jc/__init__.py', 'r', encoding="utf-8") as f:
     content = f.read()
@@ -15,7 +16,7 @@ with open('jc/__init__.py', 'r', encoding="utf-8") as f:
 
 
 def read(filename):
-    return open(os.path.join(os.path.dirname(__file__), filename)).read()
+    return open(os.path.join(os.path.dirname(__file__), filename), encoding="utf-8").read()
 
 
 long_description = read('README.md')
